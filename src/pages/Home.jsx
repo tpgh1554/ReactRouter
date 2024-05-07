@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const age = 100;
   return (
     <>
       <h1>여기가 홈 입니다.</h1>
@@ -16,7 +17,10 @@ const Home = () => {
         <Link to="/Profile/dba">DBA Profile</Link>
       </p>
       <p>
-        <Link to="/Age/10">Age</Link>
+        <Link to={`/age/${age}`}>Age</Link>
+      </p>
+      <p>
+        <Link to="/Articles">Articles</Link>
       </p>
     </>
   );
